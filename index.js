@@ -10,7 +10,15 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+ // Object.assign({}, cart, { [itemName]: item }, { [itemPrice]: Math.floor(Math.random() * 100 + 1) });
+ // add items to cart
+ // cart[itemName] = item
+ cart = [...cart, item];
+ // turns items into JavaScript objects before adding to cart
+ // properly structures cart item as object with key of 'itemName', & corresponding value
+ //sets price (between 1 & 100) on cart object using the key 'price'
+ // chooses the price at random
+ // returns message indicating item has been added
 }
 
 function viewCart() {
